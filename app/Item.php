@@ -36,4 +36,9 @@ class Item extends Model
     {
         return $this->hasMany('App\Favorite');
     }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User', 'favorites', 'item_id', 'user_id')->withTimestamps();
+    }
 }

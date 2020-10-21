@@ -20,7 +20,7 @@ class FavoriteController extends Controller
 
 public function destroy(Item $item)
     {
-        $item->Item::users()->detach(Auth::id());
+        $item->users()->detach(Auth::id());
         return back();
     }
 }

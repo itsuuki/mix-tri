@@ -63,7 +63,7 @@ class ItemController extends Controller
         $item = Item::findOrFail($id);
         $image = Image::where('item_id', $id)->get();
         $favorite = Favorite::where('item_id', $id)->first();
-        echo var_dump($favorite);
+        // echo var_dump($favorite);
         return view('item.show', ['item' => $item, 'image' => $image, 'favorite' => $favorite]);
     }
 }

@@ -31,4 +31,5 @@ Route::post('Item/{item}/unfavorites', 'FavoriteController@destroy')->name('unfa
 Route::resource('Item', 'ItemController');
 Route::resource('User', 'UserController');
 Route::resource('Address', 'AddressController');
+Route::resource('Favorite', 'FavoriteController');
 Route::resource('Item.favorite', 'FavoriteController');

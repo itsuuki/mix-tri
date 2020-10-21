@@ -18,14 +18,10 @@
 
 .user-fav {
   border-bottom: solid 1px black;
-  border-top: solid 1px black;
   background-color: white;
   font-size: 30px;
   padding-left: 10px;
   color: black;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 30px;
 }
 
 .user-address {
@@ -119,6 +115,76 @@
 }
 
 .ac-small p {
+  margin-bottom: 0px;
+}
+
+.ac-box2 {
+  width: calc(100vw - 40vw);
+  margin: 30px auto 5px;
+}
+
+.ac-box2 label {
+  font-size: 30px;
+  font-weight: bold;
+  background: white;
+  line-height: 50px;
+  position: relative;
+  display: block;
+  height: 50px;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+  border-top: solid 1px black;
+  cursor: pointer;
+  color: black;
+  transition: all 0.5s;
+  margin-right: 1px;
+}
+
+.ac-box2 label:hover {
+  background: rgba(240, 86, 137, 0.55);
+  transition: all 0.3s;
+}
+
+.ac-box2 input {
+  display: none;
+}
+
+.ac-box2 label:after {
+  color: #fff;
+  font-family: "FontAwesome";
+  content: " \F078";
+}
+
+.ac-box2 input:checked ~ label::after {
+  color: #fff;
+  font-family: "FontAwesome";
+  content: " \F077";
+}
+
+.ac-box2 div {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ac-box2 input:checked ~ div {
+  height: auto;
+  padding: 5px;
+  background: #eaeaea;
+  opacity: 1;
+}
+
+.ac-box2 div p {
+  color: #777;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.ac-small2 p {
   margin-bottom: 0px;
 }
 

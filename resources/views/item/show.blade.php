@@ -29,8 +29,8 @@
           {{ $item->price }}円
         </div>
         <a href="#" class="buy-button">購入</a>
-        @if($favorite != null)
-        $item->users()->where('user_id', Auth::id())->exists()
+        @if($item->users()->where('user_id', Auth::id())->exists())
+        
           <div class="col-md-3">
               <form action="{{ route('unfavorites', $item) }}" method="POST">
                   {{ csrf_field() }}
@@ -45,7 +45,6 @@
               </form>
           </div>
         @endif
-        <!-- <a href="#" class="fav-button">お気に入りに追加</a> -->
       </div>
     </div>
   </div>

@@ -8,9 +8,28 @@
         <div class="user-one">
           {{ $user->name }}
         </div>
-        <a class="user-fav" href="#">
-          お気に入り一覧
-        </a>
+
+
+        <div class="ac-box2">
+          <input id="ac-2" name="accordion-2" type="checkbox" />
+          <label for="ac-2" class="user-fav">
+            お気に入り一覧
+          </label>
+          <div class="ac-small2">
+            <p>
+              @if (!$fav_items->isEmpty())
+                @foreach ($fav_items as $fav_item)
+                  <a class="user-shop" href="/Item/{{ $fav_item->id }}">
+                    {{$fav_item->tname}}
+                  </a>
+                @endforeach
+              @endif
+            </p>
+          </div>
+        </div>
+
+
+
         <div class="ac-box">
           <input id="ac-1" name="accordion-1" type="checkbox" />
           <label for="ac-1" class="user-address">

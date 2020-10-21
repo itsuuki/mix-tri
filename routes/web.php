@@ -11,14 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+RRoute::get('/', [ItemController::class, 'index'])->name('item/index');
+Route::get('/Item/create', 'ItemController@create');
+Route::get('/Item/{$id}', 'ItemController@show');
+Route::get('/User/{$id}', 'UserController@show');
+Route::get('/User/address', 'AddressController@create');
+Route::post('Item/{id}/favorites', 'FavoriteController@store')->name('favorites');
+Route::post('Item/{item}/unfavorites', 'FavoriteController@destroy')->name('unfavorites');
 
-Auth::routes();
+// Route::post('/Item', [ItemController::class, 'store']);
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::resource('Item', [ItemController::class]);
+Route::resource('Item', 'ItemController');
+Route::resource('User', 'UserController');
+Route::resource('Address', 'AddressController');
+Route::resource('Item.favorite', 'FavoriteController');

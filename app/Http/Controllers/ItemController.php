@@ -12,15 +12,6 @@ use App\Favorite;
 
 class ItemController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('JpJsonResponse');
-    }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     
     public function index()
     {

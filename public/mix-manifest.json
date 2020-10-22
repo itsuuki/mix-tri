@@ -3,7 +3,9 @@
     "/css/app.css": "/css/app.css",
     "/css/item.css": "/css/item.css",
     "/css/user.css": "/css/user.css",
+    "/css/category.css": "/css/category.css",
     "/css/address.css": "/css/address.css",
+    "/js/category.js": "/js/category.js",
     "/js/item.js": "/js/item.js",
     "/js/user.js": "/js/user.js"
 }

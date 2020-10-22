@@ -15,6 +15,7 @@
 //     return view('welcome');
 // });
 
+
 Auth::routes();
 
 Route::get('/', 'ItemController@index')->name('item/index');
@@ -24,6 +25,9 @@ Route::get('/User/{$id}', 'UserController@show');
 Route::get('/User/address', 'AddressController@create');
 Route::post('Item/{item}/favorites', 'FavoriteController@store')->name('favorites');
 Route::post('Item/{item}/unfavorites', 'FavoriteController@destroy')->name('unfavorites');
+Route::get('/Home/search', 'HomeController@search')->name('home.search');
+Route::get('/category', 'CategoryController@create');
+Route::get('/cate', 'CategoryController@index');
 
 // Route::post('/Item', [ItemController::class, 'store']);
 
@@ -33,3 +37,4 @@ Route::resource('User', 'UserController');
 Route::resource('Address', 'AddressController');
 Route::resource('Favorite', 'FavoriteController');
 Route::resource('Item.favorite', 'FavoriteController');
+Route::resource('Category', 'CategoryController');

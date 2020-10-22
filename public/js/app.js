@@ -49751,6 +49751,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 var app = new Vue({
   el: '#app'
 });
+document.addEventListener("touchstart", function () {}, true);
 
 /***/ }),
 
@@ -49903,6 +49904,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/category.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/category.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/item.scss":
 /*!**********************************!*\
   !*** ./resources/sass/item.scss ***!
@@ -49926,9 +49938,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/item.scss ./resources/sass/user.scss ./resources/sass/address.scss ***!
-  \*************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/item.scss ./resources/sass/user.scss ./resources/sass/category.scss ./resources/sass/address.scss ***!
+  \********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49936,6 +49948,7 @@ __webpack_require__(/*! C:\Users\wi031\Desktop\laravel\mix-tris\mix-tri\resource
 __webpack_require__(/*! C:\Users\wi031\Desktop\laravel\mix-tris\mix-tri\resources\sass\app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! C:\Users\wi031\Desktop\laravel\mix-tris\mix-tri\resources\sass\item.scss */"./resources/sass/item.scss");
 __webpack_require__(/*! C:\Users\wi031\Desktop\laravel\mix-tris\mix-tri\resources\sass\user.scss */"./resources/sass/user.scss");
+__webpack_require__(/*! C:\Users\wi031\Desktop\laravel\mix-tris\mix-tri\resources\sass\category.scss */"./resources/sass/category.scss");
 module.exports = __webpack_require__(/*! C:\Users\wi031\Desktop\laravel\mix-tris\mix-tri\resources\sass\address.scss */"./resources/sass/address.scss");
 
 
